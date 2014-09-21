@@ -1,4 +1,4 @@
-package net.yslibrary.android.agileporcat;
+package net.yslibrary.android.agileporcat.fragment;
 
 
 import android.app.Activity;
@@ -21,6 +21,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import net.yslibrary.android.agileporcat.R;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
