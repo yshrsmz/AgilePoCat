@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="105dp"
+    android:layout_width="150dp">
+
+    <ImageView
+        android:id="@+id/image_item_card_stack"
+        android:scaleType="centerCrop"
+        android:layout_width="105dp"
+        android:layout_height="150dp" />
+
+</RelativeLayout>
