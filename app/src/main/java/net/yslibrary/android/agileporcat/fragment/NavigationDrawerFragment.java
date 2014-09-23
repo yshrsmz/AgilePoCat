@@ -23,6 +23,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import net.yslibrary.android.agileporcat.R;
+import net.yslibrary.android.agileporcat.adapter.NavigationDrawerAdapter;
+import net.yslibrary.android.agileporcat.enums.DrawerMenu;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.
@@ -99,15 +101,17 @@ public class NavigationDrawerFragment extends Fragment {
                 selectItem(position);
             }
         });
-        mDrawerListView.setAdapter(new ArrayAdapter<String>(
-                getActionBar().getThemedContext(),
-                android.R.layout.simple_list_item_activated_1,
-                android.R.id.text1,
-                new String[]{
-                        getString(R.string.title_section1),
-                        getString(R.string.title_section2),
-                        getString(R.string.title_section3),
-                }));
+
+
+        NavigationDrawerAdapter adapter = new NavigationDrawerAdapter(getActivity());
+        adapter.addHeader(getString(R.string.drawer_header_card_type), DrawerMenu.CARD_HEADER);
+        adapter.addMenu(getString(R.string.drawer_content_fibonacci), DrawerMenu.CARD_FIBONACCI);
+        adapter.addHeader(getString(R.string.drawer_header_others), DrawerMenu.OTHERS_HEADER);
+        adapter.addMenu(getString(R.string.drawer_content_about), DrawerMenu.OTHERS_ABOUT);
+        adapter.addMenu(getString(R.string.drawer_content_licence), DrawerMenu.OTHERS_LICENCE);
+
+        mDrawerListView.setAdapter(adapter);
+
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
     }
