@@ -3,9 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 20
     buildToolsVersion "20.0.0"
-
     defaultConfig {
-        applicationId "net.yslibrary.android.agileporcat"
+        applicationId 'net.yslibrary.android.agilepocat'
         minSdkVersion 19
         targetSdkVersion 20
         versionCode 1
@@ -17,12 +16,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:support-v4:20.0.0'
-
     compile 'com.squareup:otto:+'
     compile 'com.jakewharton:butterknife:+'
 }

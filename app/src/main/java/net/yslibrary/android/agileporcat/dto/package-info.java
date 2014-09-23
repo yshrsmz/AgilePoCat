@@ -1,1 +1,0 @@
-package net.yslibrary.android.agileporcat.dto;

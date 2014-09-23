@@ -12,14 +12,15 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:layout_above="@+id/drawer_header_border"
-        android:textSize="18sp"
-        android:text="header"/>
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:text="HEADER"/>
 
     <View
         android:id="@+id/drawer_header_border"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:background="@android:color/darker_gray"/>
 
 </RelativeLayout>
