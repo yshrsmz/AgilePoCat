@@ -1,4 +1,4 @@
-package net.yslibrary.android.agilepocat.fragment;
+package net.yslibrary.android.agilepocat.ui.fragment;
 
 
 import android.app.Activity;
@@ -12,17 +12,14 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import net.yslibrary.android.agilepocat.R;
-import net.yslibrary.android.agilepocat.adapter.NavigationDrawerAdapter;
+import net.yslibrary.android.agilepocat.ui.adapter.NavigationDrawerAdapter;
 import net.yslibrary.android.agilepocat.enums.DrawerMenu;
 
 /**

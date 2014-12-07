@@ -1,4 +1,4 @@
-package net.yslibrary.android.agilepocat.adapter;
+package net.yslibrary.android.agilepocat.ui.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

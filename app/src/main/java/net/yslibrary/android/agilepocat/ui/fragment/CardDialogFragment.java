@@ -1,4 +1,4 @@
-package net.yslibrary.android.agilepocat.fragment;
+package net.yslibrary.android.agilepocat.ui.fragment;
 
 
 

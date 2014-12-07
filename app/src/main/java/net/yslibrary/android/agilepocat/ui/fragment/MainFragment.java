@@ -1,4 +1,4 @@
-package net.yslibrary.android.agilepocat.fragment;
+package net.yslibrary.android.agilepocat.ui.fragment;
 
 
 
@@ -11,7 +11,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 
 import net.yslibrary.android.agilepocat.R;
-import net.yslibrary.android.agilepocat.adapter.CardStackAdapter;
+import net.yslibrary.android.agilepocat.ui.adapter.CardStackAdapter;
 import net.yslibrary.android.agilepocat.dto.CardDto;
 import net.yslibrary.android.agilepocat.event.BusHolder;
 

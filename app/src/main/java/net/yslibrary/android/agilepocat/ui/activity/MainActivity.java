@@ -1,4 +1,4 @@
-package net.yslibrary.android.agilepocat.activity;
+package net.yslibrary.android.agilepocat.ui.activity;
 
 import android.app.Activity;
 
@@ -6,6 +6,7 @@ import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -13,12 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 
-import net.yslibrary.android.agilepocat.fragment.MainFragment;
-import net.yslibrary.android.agilepocat.fragment.NavigationDrawerFragment;
+import net.yslibrary.android.agilepocat.ui.fragment.MainFragment;
+import net.yslibrary.android.agilepocat.ui.fragment.NavigationDrawerFragment;
 import net.yslibrary.android.agilepocat.R;
 
 
-public class MainActivity extends Activity
+public class MainActivity extends BaseActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
     /**
